@@ -1,0 +1,85 @@
+body {
+    background: #fff;
+    color: #000;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.floors {
+    flex: 0 1 auto;
+    margin-right: .5em;
+    text-align: right;
+}
+
+.ev {
+    flex: 0 0 auto;
+    margin-right: .5em;
+    min-width: 15%;
+}
+
+.calls {
+    flex: 2 0 auto;
+    margin-right: .5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0 .25em;
+    min-height: 1.25em;
+    line-height: 1.25;
+    border: 1px solid transparent;
+}
+
+li:nth-child(odd) {
+    background: #eee;
+}
+
+.target {
+    border: 1px solid green;
+}
+
+.state-S {
+    background: #ccc !important;
+}
+
+.state-O {
+    background: #9fc !important;
+}
+
+.state-U, .state-D {
+    background: #9cf !important;
+}
+
+.command-E {
+    background: #fc6 !important;
+}
+
+.command-X {
+    background: #f99 !important;
+}
+
+strong {
+    background: #c00;
+    color: #fff;
+    padding: 0 .1em;
+}
+
+em {
+    font-style: normal;
+    padding: 0 .1em;
+    background: #090;
+    color: #fff;
+}
+
+small {
+    font-size: 66.666666%;
+    color: #999;
+}
