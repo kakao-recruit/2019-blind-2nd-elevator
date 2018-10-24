@@ -54,14 +54,14 @@ func NewElevators(problem, carCount int) (*Elevators, error) {
 	calls := mydb.GetCalls(problem)
 
 	maxFloor := 0
-	for _, c := range calls {
-		if c.Start > maxFloor {
-			maxFloor = c.Start
-		}
 
-		if c.End > maxFloor {
-			maxFloor = c.End
-		}
+	switch problem {
+	case 0:
+		maxFloor = 6
+	case 1:
+		maxFloor = 25
+	case 2:
+		maxFloor = 25
 	}
 
 	cars := make([]Elevator, 0)
