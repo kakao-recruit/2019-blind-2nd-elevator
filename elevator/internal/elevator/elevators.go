@@ -57,7 +57,7 @@ func NewElevators(problem, carCount int) (*Elevators, error) {
 
 	switch problem {
 	case 0:
-		maxFloor = 6
+		maxFloor = 5
 	case 1:
 		maxFloor = 25
 	case 2:
