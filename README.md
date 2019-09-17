@@ -54,9 +54,8 @@
 Repository 를 Clone 하고 Elevator 서버를 실행합니다.
 
 ```bash
-$ git clone https://github.com/kakao-recruit/2019-blind-2nd-elevator.git
-$ cd 2019-blind-2nd-elevator
-$ cd elevator/cmd/elevator
+$ git clone https://github.com/kakao-recruit/2019-blind-2nd-elevator.git $GOPATH/src/2019-blind-2nd-elevator
+$ cd $GOPATH/src/2019-blind-2nd-elevator/elevator/cmd/elevator/
 $ go get ./						# install libraries
 $ go build
 $ ./elevator
