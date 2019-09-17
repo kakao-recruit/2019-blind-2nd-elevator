@@ -61,6 +61,14 @@ $ go build
 $ ./elevator
 ```
 
+Docker를 이용하여 서버를 실행하는 방법도 있습니다.
+```bash
+$ git clone https://github.com/kakao-recruit/2019-blind-2nd-elevator.git 
+$ cd 2019-blind-2nd-elevator
+$ docker build . -t elevator
+$ docker run -p 8000:8000 elevator
+```
+
 ### Elevator Control
 
 example 코드로 어피치 맨션 문제를 풀어봅니다. python 2.7 또는 3.4 이상이 필요합니다.
